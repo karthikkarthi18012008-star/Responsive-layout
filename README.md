@@ -69,3 +69,17 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+On smaller screens, the navigation changes from a horizontal layout to a vertical layout using media queries.
+
+---
+
+### 2. CSS Grid Booking Layout
+
+The booking form and booking summary are arranged side by side using **CSS Grid**.
+
+```css
+.booking-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
