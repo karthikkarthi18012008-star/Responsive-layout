@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Booking Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">TravelEase</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Destinations</a>
+            <a href="#">Bookings</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Hotel Booking</h1>
+
+        <section class="booking-container">
+
+            <!-- Booking Form -->
+            <div class="booking-form">
+                <h2>Book Your Stay</h2>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" placeholder="Enter destination">
+
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin">
+
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout">
+
+                    <label for="guests">Guests</label>
+                    <input type="number" id="guests" min="1" placeholder="Number of guests">
+
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+
+            <!-- Booking Summary -->
+            <div class="booking-summary">
+                <h2>Booking Summary</h2>
+
+                <p><strong>Destination:</strong> Bangalore</p>
+                <p><strong>Check-in:</strong> 15 September 2026</p>
+                <p><strong>Check-out:</strong> 18 September 2026</p>
+                <p><strong>Guests:</strong> 2</p>
+                <p><strong>Total:</strong> ₹7,500</p>
+            </div>
+
+        </section>
+
+        <!-- Table -->
+        <section class="table-section">
+            <h2>Available Rooms</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Room Type</th>
+                            <th>Capacity</th>
+                            <th>Price/Night</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Standard Room</td>
+                            <td>2</td>
+                            <td>₹2,000</td>
+                            <td>Available</td>
+                        </tr>
+
+                        <tr>
+                            <td>Deluxe Room</td>
+                            <td>3</td>
+                            <td>₹3,000</td>
+                            <td>Available</td>
+                        </tr>
+
+                        <tr>
+                            <td>Suite</td>
+                            <td>4</td>
+                            <td>₹4,500</td>
+                            <td>Limited</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 TravelEase. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
